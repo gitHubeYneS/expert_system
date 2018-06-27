@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
 const pug = require('./webpackConfigs/pug');
@@ -6,6 +7,8 @@ const devserver = require('./webpackConfigs/devserver');
 const sass = require('./webpackConfigs/sass');
 const css = require('./webpackConfigs/css');
 const extractCSS = require('./webpackConfigs/css.extract');
+
+
 
 
 const PATHS = {
@@ -24,8 +27,13 @@ const common = merge([
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Expert system',
+            chunks:'common',
             template: PATHS.src + '/index.pug',
             hash: true
+        }),
+        new webpack.ProvidePlugin({
+            $:'jquery',
+            jQuery:'jquery'
         })
     ]
 },

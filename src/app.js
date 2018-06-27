@@ -7,3 +7,5 @@ h1Element.innerHTML='Hello';
 document.body.appendChild(h1Element);
 
 console.log('in app.js');
+console.log($);
+console.log(jQuery);
