@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
 const pug = require('./webpackConfigs/pug');
 const devserver = require('./webpackConfigs/devserver');
-
+const sass = require('./webpackConfigs/sass');
+const css = require('./webpackConfigs/css');
+const extractCSS = require('./webpackConfigs/css.extract');
 
 
 const PATHS = {
@@ -17,7 +19,7 @@ const common = merge([
     entry: PATHS.src + '/app.js',
     output: {
         path: PATHS.build,
-        filename: '[name].bundle.js'
+        filename: 'js/[name].bundle.js'
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -32,9 +34,9 @@ const common = merge([
 
 module.exports = function (env) {
     if (env === 'production') {
-        return common;
+        return merge([common,extractCSS()]);
     }
     if (env === 'development') {
-        return merge([{}, common, devserver()])
+        return merge([{}, common, devserver(),sass(),css()])
     }
 };
