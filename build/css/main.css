@@ -339,10 +339,81 @@ template {
 [hidden] {
   display: none;
 }
+@charset "UTF-8";
+body {
+  background: url(../image/expSystem.jpg) no-repeat;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */ }
+
 .firstQ {
   display: block;
   position: relative;
-  color: black;
-  right: -200px;
+  top: 0px;
+  right: -10px;
+  color: yellow;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic; }
+
+.introduction {
+  display: block;
+  position: relative;
+  top: 0px;
+  right: -10px;
+  color: yellow;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 20px; }
+
+.introduction.secondList {
+  display: block;
+  position: absolute;
+  top: 67px;
+  left: 100px; }
+
+a {
+  color: yellow; }
+
+a:visited {
+  color: salmon; }
+
+a:active {
+  color: red; }
+
+a:hover {
+  background: yellow; }
+
+.seven {
+  color: #524E49;
+  background: #fdeaa8;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease-out; }
+
+.seven {
+  transform-style: preserve-3d; }
+
+.seven:after {
+  top: -50%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  background: #fdeaa8;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px;
+  content: 'Help';
+  transform-origin: left bottom;
+  transform: rotateX(90deg); }
+
+.seven:hover {
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%); }

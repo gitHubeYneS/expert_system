@@ -4,13 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0" width="device-width">
-    <title> </title>
-  <link href="./css/main.css?b17d1f411899eedfd56f" rel="stylesheet"></head>
+    <title>Expert System</title>
+  <link href="./css/main.css?2845ad711ab10c9a720e" rel="stylesheet"></head>
   <body>
-    <div class="firstQ">
-      <h1 class="firstQ">Готовы ли вы приобрести лицензионный продукт для тестирования?</h1>
-      <button class="firstQ_buttonYES" name="YES" value="Y" tabindex="1" title="Нажмите,чтобы подвердить свой выбор">ДА </button>
-      <button class="firstQ_buttonNO" name="NO" value="N" tabindex="2" title="Нажмите,чтобы выбрать другой вариант">НЕТ</button>
+    <div class="introduction">
+      <p class="introduction_words">
+        Новые фреймворки и инструменты для тестирования кода и юзабилити появляются каждый день. 
+        Данная экспертная система призвана помочь в выборе инструмента тестирования.                
+        Ниже представлен список инструментов для тестирования программного кода, которые подходят под разные нужды:
+      </p>
+      <div class="introduction_firstList"><a class="introduction_jasmine" href="https://jasmine.github.io/">Jasmine</a><br><a class="introduction_mocha" href="https://mochajs.org/">Mocha</a><br><a class="introduction_chai" href="http://www.chaijs.com/">Chai</a><br><a class="introduction_qunit" href="http://qunitjs.com/">QUnit</a><br><a class="introduction_sinon" href="http://sinonjs.org/">Sinon</a><br><a class="introduction_karma" href="http://karma-runner.github.io/1.0/index.html">Karma</a>
+      </div>
+      <div class="introduction secondList"><a class="introduction_selenium" href="https://www.seleniumhq.org/">Selenium</a><br><a class="introduction_webdriverio" href="http://webdriver.io/">WebdriverIO</a><br><a class="introduction_nightwatch" href="http://nightwatchjs.org/">Nightwatch</a><br><a class="introduction_phantomcss" href="https://github.com/HuddleEng/PhantomCSS"> PhantomCSS</a><br><a class="introduction_phantomflow" href="https://github.com/HuddleEng/PhantomFlow">PhantomFlow</a><br><a class="introduction_percy.io" href="https://percy.io/">Percy.io</a>
+      </div>
     </div>
-  <script type="text/javascript" src="js/main.bundle.js?b17d1f411899eedfd56f"></script></body>
+    <button class="seven" onclick="func()" title="Help">Помощь</button>
+    <div class="firstQ">
+      <h1 class="firstQ_question">Готовы ли вы приобрести лицензионный продукт для тестирования?</h1>
+      <p>
+        <input class="firstQ_YES" type="radio" name="ДА" value="YES">Да
+      </p>
+      <p>   
+        <input class="firstQ_NO" type="radio" name="ДА" value="YES">Нет
+      </p>
+    </div><br>
+    <script src="logic.js"></script>
+  <script type="text/javascript" src="js/main.bundle.js?2845ad711ab10c9a720e"></script></body>
 </html>

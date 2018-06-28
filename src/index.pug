@@ -4,7 +4,7 @@ html
         meta(charset='utf-8')
         meta(http-equiv= 'X-UA-Compatible',content='IE=edge')
         meta(name='viewport',content='initial-scale=1.0',width='device-width')
-        title 
+        title Expert System
     body
         div.introduction
             p.introduction_words
@@ -43,7 +43,7 @@ html
                 br
                 +link('https://percy.io/','Percy.io')(class="introduction_percy.io")
                 //------------------------------------------------
-        button(class="seven",onclick="location.href='#';",title="Help") Помощь
+        button(class="seven",onclick="func()",title="Help") Помощь
 
         div.firstQ
             h1.firstQ_question Готовы ли вы приобрести лицензионный продукт для тестирования?
@@ -54,5 +54,5 @@ html
                 input.firstQ_NO(type="radio",name="ДА",value="YES")
                 |Нет
         br
-        div.secondQ
-            h1.
+        
+        script(src="logic.js")
