@@ -52,3 +52,35 @@ a:hover{
 }
 //------------------------------------------
 
+//------------seven block------------
+.seven {
+	color: #524E49;
+	background: #fdeaa8;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 3px; 
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease-out;
+}
+.seven {
+	transform-style: preserve-3d;
+}
+.seven:after {
+	top: -50%;
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	background: #fdeaa8;
+	border-radius: 5px;
+	box-shadow: 0px 1px 3px; 
+	content: 'Help';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+}
+.seven:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+//------------------------------------------
