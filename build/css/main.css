@@ -339,8 +339,10 @@ template {
 [hidden] {
   display: none;
 }
-h1 {
-  display: flex;
-  justify-content: center;
-  color: greenyellow;
-  font-family: 'Times New Roman', Times, serif; }
+.firstQ {
+  display: block;
+  position: relative;
+  color: black;
+  right: -200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; }

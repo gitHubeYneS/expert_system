@@ -1,7 +1,54 @@
-h1{
-    display: flex;
-    justify-content: center;
-    color:greenyellow;
-    font-family: 'Times New Roman', Times, serif;
-
+body{
+    background: url("expSystem.jpg") no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
 }
+
+//------------first block------------
+.firstQ {
+    display: block;
+    position: relative;
+    top:0px;
+    right: -10px;
+    color:rgb(255, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+//------------------------------------------
+
+//------------introduction block------------
+.introduction{
+    display: block;
+    position: relative;
+    top:0px;
+    right: -10px;
+    color:rgb(255, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size:20px;
+}
+.introduction.secondList{
+    display:block;
+    position: absolute;
+    top:67px;
+    left: 100px;
+}
+//------------------------------------------
+
+//------------a block------------
+a{
+    color:rgb(255, 255, 0);
+}
+a:visited{
+    color:rgb(250,128,114);
+}
+a:active{
+    color:rgb(255,0,0);
+}
+a:hover{
+    background:rgb(255, 255, 0);
+}
+//------------------------------------------
+

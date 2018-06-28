@@ -2,8 +2,57 @@ doctype html
 html
     head
         meta(charset='utf-8')
-        meta(http-equiv= "X-UA-Compatible",content="IE=edge")
+        meta(http-equiv= 'X-UA-Compatible',content='IE=edge')
         meta(name='viewport',content='initial-scale=1.0',width='device-width')
         title 
     body
-          
+        div.introduction
+            p.introduction_words
+                |Новые фреймворки и инструменты для тестирования кода и юзабилити появляются каждый день. 
+                |Данная экспертная система призвана помочь в выборе инструмента тестирования.                
+                |Ниже представлен список инструментов для тестирования программного кода, которые подходят под разные нужды:
+
+            div.introduction_firstList
+                //-----------------mixins-------------------------
+                //-for links
+                mixin link(href,name)
+                    a(href=href)&attributes(attributes)=name 
+                        
+                +link('https://jasmine.github.io/','Jasmine')(class="introduction_jasmine")
+                br
+                +link('https://mochajs.org/','Mocha')(class="introduction_mocha")
+                br
+                +link('http://www.chaijs.com/','Chai')(class="introduction_chai")
+                br
+                +link('http://qunitjs.com/','QUnit')(class="introduction_qunit")
+                br
+                +link('http://sinonjs.org/','Sinon')(class="introduction_sinon")
+                br
+                +link('http://karma-runner.github.io/1.0/index.html','Karma')(class="introduction_karma")
+
+            div.introduction.secondList
+                +link('https://www.seleniumhq.org/','Selenium')(class="introduction_selenium")
+                br
+                +link('http://webdriver.io/','WebdriverIO')(class="introduction_webdriverio")
+                br
+                +link('http://nightwatchjs.org/','Nightwatch')(class="introduction_nightwatch")
+                br
+                +link('https://github.com/HuddleEng/PhantomCSS',' PhantomCSS')(class="introduction_phantomcss")
+                br
+                +link('https://github.com/HuddleEng/PhantomFlow','PhantomFlow')(class="introduction_phantomflow")
+                br
+                +link('https://percy.io/','Percy.io')(class="introduction_percy.io")
+                br
+                //------------------------------------------------
+
+        div.firstQ
+            h1.firstQ_question Готовы ли вы приобрести лицензионный продукт для тестирования?
+            p
+                input.firstQ_YES(type="radio",name="ДА",value="YES")
+                |Да
+            p    
+                input.firstQ_NO(type="radio",name="ДА",value="YES")
+                |Нет
+        br
+        div.secondQ
+            h1.
