@@ -8,7 +8,6 @@ const sass = require('./webpackConfigs/sass');
 const css = require('./webpackConfigs/css');
 const extractCSS = require('./webpackConfigs/css.extract');
 const images = require('./webpackConfigs/image');
-const babel = require('./webpackConfigs/babel');
 
 
 const PATHS = {
@@ -38,8 +37,7 @@ const common = merge([
     ]
 },
     pug(),
-    images(),
-    babel()
+    images()
 ]);
 
 module.exports = function (env) {

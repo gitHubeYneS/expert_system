@@ -53,7 +53,7 @@ a:hover{
 //------------------------------------------
 
 //------------seven block------------
-.seven {
+#seven {
 	color: #524E49;
 	background: #fdeaa8;
 	padding: 10px;
@@ -64,10 +64,10 @@ a:hover{
 	box-sizing: border-box;
 	transition: all 500ms ease-out;
 }
-.seven {
+#seven {
 	transform-style: preserve-3d;
 }
-.seven:after {
+#seven:after {
 	top: -50%;
 	left: 0px;
 	width: 100%;
@@ -79,7 +79,7 @@ a:hover{
 	transform-origin: left bottom;
 	transform: rotateX(90deg);
 }
-.seven:hover {
+#seven:hover {
 	transform-origin: center bottom;
 	transform: rotateX(-90deg) translateY(100%);
 }
