@@ -10,7 +10,7 @@ export default function () {
         $('.fifthQ input[name=radio5]:checked')[0] == undefined || $('.sixthQ input[name=radio6]:checked')[0] == undefined) {
         alert('Вы ответили не на все вопросы! Пожалуйста, вернитесь обратно к форме и ответьте на оставшиеся вопросы ');
     } else {
-        if ($('.firstQ input[name=radio1][value=fHave]').prop('checked', true) && $('.secondQ input[name=radio2][value=sHave]').prop('checked', true) &&
+        if ($('.firstQ input[name=radio1][value=fHave]').prop('checked') && $('.secondQ input[name=radio2][value=sHave]').prop('checked', true) &&
             $('.thirdQ input[name=radio3][value=tHave]').prop('checked', true) && $('.fourthQ input[name=radio4][value=frHave]').prop('checked', true) &&
             $('.fifth input[name=radio5][value=fiHave]').prop('checked', true) && $('.sixthQ input[name=radio6][value=siHave]').prop('checked', true)) {
             if (confirm(`Вам подойдут такие инструменты тестирования:${testingToolsDataBase[4]},${testingToolsDataBase[7]}.\nПерейти на сайт для ознакомления?`)) {
@@ -27,6 +27,6 @@ export default function () {
                 window.open(links[4]);
             }
         } 
-
     }
 }
+
