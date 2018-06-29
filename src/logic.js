@@ -10,16 +10,23 @@ export default function () {
         $('.fifthQ input[name=radio5]:checked')[0] == undefined || $('.sixthQ input[name=radio6]:checked')[0] == undefined) {
         alert('Вы ответили не на все вопросы! Пожалуйста, вернитесь обратно к форме и ответьте на оставшиеся вопросы ');
     } else {
-        if ($('.firstQ input[name=radio1][value=have]').prop('checked', true) && $('.secondQ input[name=radio2][value=IMPORTANT]').prop('checked', true) &&
-            $('.thirdQ input[name=radio3][value=console]').prop('checked', true) && $('.fourthQ input[name=radio4][value=VERY]').prop('checked', true) &&
-            $('.fifth input[name=radio5][value=NEED]').prop('checked', true) && $('.sixthQ input[name=radio6][value=YES]').prop('checked', true)) {
-            if (confirm(`Вам подойдут такие инструменты тестирования:${testingToolsDataBase[7]}.\nПерейти на сайт для ознакомления?`)) {
+        if ($('.firstQ input[name=radio1][value=fHave]').prop('checked', true) && $('.secondQ input[name=radio2][value=sHave]').prop('checked', true) &&
+            $('.thirdQ input[name=radio3][value=tHave]').prop('checked', true) && $('.fourthQ input[name=radio4][value=frHave]').prop('checked', true) &&
+            $('.fifth input[name=radio5][value=fiHave]').prop('checked', true) && $('.sixthQ input[name=radio6][value=siHave]').prop('checked', true)) {
+            if (confirm(`Вам подойдут такие инструменты тестирования:${testingToolsDataBase[4]},${testingToolsDataBase[7]}.\nПерейти на сайт для ознакомления?`)) {
                 window.open(links[4]);
                 window.open(links[7]);
             }
-        } else {
-            return false;
-        }
+        } 
+        else if ($('.firstQ input[name=radio1][value=fNO]').prop('checked', true) && $('.secondQ input[name=radio2][value=sHave]').prop('checked', true) &&
+        $('.thirdQ input[name=radio3][value=tHave]').prop('checked', true) && $('.fourthQ input[name=radio4][value=frHave]').prop('checked', true) &&
+        $('.fifth input[name=radio5][value=fiHave]').prop('checked', true) && $('.sixthQ input[name=radio6][value=siHave]').prop('checked', true)) {
+            if (confirm(`Вам подойдут такие инструменты тестирования:${testingToolsDataBase[0]},${testingToolsDataBase[1]},${testingToolsDataBase[4]}.\nПерейти на сайт для ознакомления?`)) {
+                window.open(links[0]);
+                window.open(links[1]);
+                window.open(links[4]);
+            }
+        } 
 
     }
 }
