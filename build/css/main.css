@@ -343,6 +343,9 @@ body {
   background: url(../image/expSystem.jpg) no-repeat;
   background-size: cover; }
 
+html {
+  overflow-x: hidden; }
+
 .firstQ {
   display: block;
   position: relative;
@@ -447,5 +450,36 @@ a:hover {
   transform: rotateX(90deg); }
 
 #seven:hover {
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%); }
+
+#checkAnswer {
+  color: #524E49;
+  background: #fdeaa8;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px;
+  position: relative;
+  box-sizing: border-box;
+  right: -50%;
+  transition: all 500ms ease-out; }
+
+#checkAnswer {
+  transform-style: preserve-3d; }
+
+#checkAnswer:after {
+  top: -50%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  background: #fdeaa8;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px;
+  content: 'Get answer';
+  transform-origin: left bottom;
+  transform: rotateX(90deg); }
+
+#checkAnswer:hover {
   transform-origin: center bottom;
   transform: rotateX(-90deg) translateY(100%); }
