@@ -3,4 +3,5 @@ import 'normalize.css';
 import help from './help.js';
 
 
-document.getElementById('seven').addEventListener('click',help);
+
+$('#seven').click(help);

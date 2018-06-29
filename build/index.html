@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0" width="device-width">
     <title>Expert System</title>
-  <link href="./css/main.css?f191ef45e0fa4ff89059" rel="stylesheet"></head>
+  <link href="./css/main.css?e56972e488e80eef7cb7" rel="stylesheet"></head>
   <body>
     <div class="introduction">
       <p class="introduction_words">
@@ -20,13 +20,58 @@
     </div>
     <button id="seven" title="Help">Помощь</button>
     <div class="firstQ">
-      <h1 class="firstQ_question">Готовы ли вы приобрести лицензионный продукт для тестирования?</h1>
+      <h1 class="firstQ_question">Умеете ли вы пользоваться инструментами и фреймворками для тестирования?</h1>
       <p>
-        <input class="firstQ_YES" type="radio" name="ДА" value="YES">Да
+        <input class="firstQ_YES" type="radio" name="ИМЕЕТСЯ" value="HAVE" required>Имеется опыт
       </p>
       <p>   
-        <input class="firstQ_NO" type="radio" name="ДА" value="YES">Нет
+        <input class="firstQ_NO" type="radio" name="НЕТ ОПЫТА" value="HAVEN'T" required>Раньше не работал
       </p>
     </div><br>
-  <script type="text/javascript" src="js/main.bundle.js?f191ef45e0fa4ff89059"></script></body>
+    <div class="secondQ">
+      <h1 class="secondQ_question">Играет ли роль производительность в вашем проекте(тесты будут выполняться синхронно или асинхронно)?</h1>
+      <p>  
+        <input class="secondQ_YES" type="radio" name="ИГРАЕТ" value="IMPORTANT" required>Играет
+      </p>
+      <p>
+        <input class="secondQ_NO" type="radio" name="НЕ ИГРАЕТ" value="NO IMPORTANT" required>Роли не играет
+      </p>
+    </div><br>
+    <div class="thirdQ">
+      <h1 class="thirdQ_question">Какую среду тестирования Вы бы выбрали?</h1>
+      <p>
+        <input class="thirdQ_console" type="radio" name="консоль" value="console" required>Консоль
+      </p>
+      <p>
+        <input class="thirdQ_browser" type="radio" name="браузер" value="browser" required>Браузер
+      </p>
+    </div><br>
+    <div class="fourthQ">
+      <h1 class="fourthQ_question">Важно ли наличие таких библиотек,как:"test doubles" и "assertions"?</h1>
+      <p>
+        <input class="fourthQ_YES" type="radio" name="ДА,ВАЖНО" value="YES,IMPORTANT" required>Да,важно
+      </p>
+      <p>
+        <input class="fourthQ_NO" type="radio" name="НЕТ,НЕ ОСОБО" value="NO,NO IMPORTANT" required>Нет,не особо
+      </p>
+    </div><br>
+    <div class="fifthQ">
+      <h1 class="fifthQ_question">Важно ли наличие "Sinon Fake Server(поддельный сервер)"?(Позволяет установить поддельные ответы на определенные AJAX запросы)</h1>
+      <p>
+        <input class="fifthQ_YES" type="radio" name="ВАЖНО" value="NEED" required>Важно
+      </p>
+      <p>
+        <input class="fifthQ_NO" type="radio" name="НЕ ВАЖНО" value="NO NEED" required>Не имеет значения
+      </p>
+    </div><br>
+    <div class="sixthQ">
+      <h1 class="sixthQ_question">Должен ли интерфейс быть построен на промисах?</h1>
+      <p>
+        <input class="sixthQ_YES" type="radio" name="ДА" value="YES" required>Да
+      </p>
+      <p>
+        <input class="sixthQ_NO" type="radio" name="НЕТ" value="NOT" required>Нет
+      </p>
+    </div>
+  <script type="text/javascript" src="js/main.bundle.js?e56972e488e80eef7cb7"></script></body>
 </html>

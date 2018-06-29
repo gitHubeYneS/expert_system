@@ -339,22 +339,54 @@ template {
 [hidden] {
   display: none;
 }
-@charset "UTF-8";
 body {
   background: url(../image/expSystem.jpg) no-repeat;
-  -moz-background-size: 100%;
-  /* Firefox 3.6+ */
-  -webkit-background-size: 100%;
-  /* Safari 3.1+ и Chrome 4.0+ */
-  -o-background-size: 100%;
-  /* Opera 9.6+ */
-  background-size: 100%;
-  /* Современные браузеры */ }
+  background-size: cover; }
 
 .firstQ {
   display: block;
   position: relative;
   top: 0px;
+  right: -10px;
+  color: yellow;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; }
+
+.secondQ {
+  display: block;
+  position: relative;
+  right: -10px;
+  color: yellow;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; }
+
+.thirdQ {
+  display: block;
+  position: relative;
+  right: -10px;
+  color: yellow;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; }
+
+.fourthQ {
+  display: block;
+  position: relative;
+  right: -10px;
+  color: yellow;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; }
+
+.fifthQ {
+  display: block;
+  position: relative;
+  right: -10px;
+  color: yellow;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; }
+
+.sixthQ {
+  display: block;
+  position: relative;
   right: -10px;
   color: yellow;
   font-family: 'Times New Roman', Times, serif;

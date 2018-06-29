@@ -1,9 +1,6 @@
 body{
     background: url("expSystem.jpg") no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    background-size: cover;
 }
 
 //------------first block------------
@@ -11,6 +8,61 @@ body{
     display: block;
     position: relative;
     top:0px;
+    right: -10px;
+    color:rgb(255, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+//------------------------------------------
+
+//------------second block------------
+.secondQ {
+    display: block;
+    position: relative;
+    right: -10px;
+    color:rgb(255, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+//------------------------------------------
+
+//------------third block------------
+.thirdQ {
+    display: block;
+    position: relative;
+    right: -10px;
+    color:rgb(255, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+//------------------------------------------
+
+//------------third block------------
+.fourthQ {
+    display: block;
+    position: relative;
+    right: -10px;
+    color:rgb(255, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+//------------------------------------------
+
+//------------fifth block------------
+.fifthQ {
+    display: block;
+    position: relative;
+    right: -10px;
+    color:rgb(255, 255, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+//------------------------------------------
+
+//------------sixth block------------
+.sixthQ {
+    display: block;
+    position: relative;
     right: -10px;
     color:rgb(255, 255, 0);
     font-family: 'Times New Roman', Times, serif;
