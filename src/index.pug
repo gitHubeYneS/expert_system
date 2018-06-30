@@ -17,7 +17,7 @@ html
                 //-for links
                 mixin link(href,name)
                     a(href=href)&attributes(attributes)=name 
-                        
+
                 +link('https://jasmine.github.io/','Jasmine')(class="introduction_jasmine")
                 br
                 +link('https://mochajs.org/','Mocha')(class="introduction_mocha")
@@ -48,42 +48,42 @@ html
         div.firstQ
             h1.firstQ_question Умеете ли вы пользоваться инструментами и фреймворками для тестирования?
             p
-                input.firstQ_YES(type="radio",name="radio1",value="fHave" required)
+                input.firstQ_YES(type="radio",name="radio1",value="fHave" )
                 |Имеется опыт
             p    
-                input.firstQ_NO(type="radio",name="radio1",value="fNO" required)
+                input.firstQ_NO(type="radio",name="radio1",value="fNO" )
                 |Раньше не работал
         br
 
         div.secondQ
             h1.secondQ_question Играет ли роль производительность в вашем проекте(тесты будут выполняться синхронно или асинхронно)?
             p   
-                input.secondQ_YES(type="radio",name="radio2",value="sHave" required)
+                input.secondQ_YES(type="radio",name="radio2",value="sHave" )
                 |Играет
             p
-                input.secondQ_NO(type="radio",name="radio2",value="sNO" required)
+                input.secondQ_NO(type="radio",name="radio2",value="sNO" )
                 |Роли не играет
-        
+
         br
 
         div.thirdQ
             h1.thirdQ_question Какую среду тестирования Вы бы выбрали?
             p
-                input.thirdQ_console(type="radio",name="radio3",value="tHave" required)
+                input.thirdQ_YES(type="radio",name="radio3",value="tHave" )
                 |Консоль
             p
-                input.thirdQ_browser(type="radio",name="radio3",value="tNO" required)
+                input.thirdQ_NO(type="radio",name="radio3",value="tNO")
                 |Браузер
 
         br
-        
+
         div.fourthQ
             h1.fourthQ_question Важно ли наличие таких библиотек,как:"test doubles" и "assertions"?
             p
-                input.fourthQ_YES(type="radio",name="radio4",value="frHave" required)
+                input.fourthQ_YES(type="radio",name="radio4",value="frHave" )
                 |Да,важно
             p
-                input.fourthQ_NO(type="radio",name="radio4",value="frNO" required)
+                input.fourthQ_NO(type="radio",name="radio4",value="frNO" )
                 |Нет,не особо
 
         br
@@ -91,10 +91,10 @@ html
         div.fifthQ
             h1.fifthQ_question Важно ли наличие "Sinon Fake Server(поддельный сервер)"?(Позволяет установить поддельные ответы на определенные AJAX запросы)
             p
-                input.fifthQ_YES(type="radio",name="radio5",value="fiHave" required)
+                input.fifthQ_YES(type="radio",name="radio5",value="fiHave" )
                 |Важно
             p
-                input.fifthQ_NO(type="radio",name="radio5",value="fiNO" required)
+                input.fifthQ_NO(type="radio",name="radio5",value="fiNO" )
                 |Не имеет значения
 
         br
@@ -102,13 +102,13 @@ html
         div.sixthQ
             h1.sixthQ_question Должен ли интерфейс быть построен на промисах?
             p
-                input.sixthQ_YES(type="radio",name="radio6",value="siHave" required)
+                input.sixthQ_YES(type="radio",name="radio6",value="siHave")
                 |Да
             p
-                input.sixthQ_NO(type="radio",name="radio6",value="siNO" required)
+                input.sixthQ_NO(type="radio",name="radio6",value="siNO")
                 |Нет
 
         br
 
         button(id="checkAnswer",title="Get answer") Получить ответ
-            
+
